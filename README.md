@@ -44,4 +44,4 @@ The API runs at http://127.0.0.1:8000, with interactive docs at http://127.0.0.1
 | PUT    | `/api/v1/issues/{id}`   | Update an issue    |
 | DELETE | `/api/v1/issues/{id}`   | Delete an issue    |
 
-An issue has an `id`, `title`, `description`, `priority` (`low`, `medium`, `high`) and `status` (`open`, `medium`, `closed`).
+An issue has an `id`, `title`, `description`, `priority` (`low`, `medium`, `high`) and `status` (`open`, `in_progress`, `closed`).

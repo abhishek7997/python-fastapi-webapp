@@ -40,9 +40,9 @@ def update_issue(issue_id: str, payload: IssueUpdate):
                 updated_issue["priority"] = payload.priority
             if payload.status is not None:
                 updated_issue["status"] = payload.status
-        issues[idx] = updated_issue
-        save_data(issues)
-        return updated_issue
+            issues[idx] = updated_issue
+            save_data(issues)
+            return updated_issue
 
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Issue not found")
 
