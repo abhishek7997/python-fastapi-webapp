@@ -1,6 +1,8 @@
-from fastapi import APIRouter, HTTPException, status
 import uuid
-from app.schemas import IssueCreate, IssueUpdate, IssueOut, IssueStatus
+
+from fastapi import APIRouter, HTTPException, status
+
+from app.schemas import IssueCreate, IssueOut, IssueStatus, IssueUpdate
 from app.storage import load_data, save_data
 
 router = APIRouter(prefix="/api/v1/issues", tags=["issues"])

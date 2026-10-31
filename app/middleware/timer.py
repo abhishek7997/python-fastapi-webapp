@@ -1,4 +1,5 @@
 import time
+
 from fastapi import Request
 
 async def timing_middleware(request: Request, call_next):
