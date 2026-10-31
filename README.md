@@ -26,11 +26,11 @@ app/
 ## Getting started
 
 ```bash
-python -m venv .venv
-.venv\Scripts\activate        # Windows (use `source .venv/bin/activate` on macOS/Linux)
-pip install "fastapi[standard]"
-fastapi dev app/main.py
+uv sync                       # creates .venv and installs dependencies from uv.lock
+uv run fastapi dev app/main.py
 ```
+
+This project uses [uv](https://docs.astral.sh/uv/). Add dependencies with `uv add <package>`.
 
 The API runs at http://127.0.0.1:8000, with interactive docs at http://127.0.0.1:8000/docs.
 
